@@ -33,3 +33,4 @@ logging.basicConfig(level='INFO')
 # 凭证传好了、机器人新建好了、指令也注册完了
 # 接下来就是运行我们的机器人了，bot.run() 就是机器人的起跑线
 bot.run()
+# 教程来自：https://github.com/TWT233/khl.py/tree/main/example/ex01_helloworld
