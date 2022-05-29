@@ -19,10 +19,10 @@ async def world(msg: Message):
 
 @bot.command(name='小可爱')
 async def world(msg: Message):  # when `name` is not set, the function name will be used
-    await msg.reply('咋啦，我在呢!😘')  # 当然也可以输入/小可爱，机器人回复：咋啦，我在呢!😘
+    await msg.reply('咋啦，我在呢!😘')  # 当然也可以输入命令：小可爱，bot回复的内容：咋啦，我在呢!😘
 
 
-# 运行日志
+# 加入运行日志
 import logging
 logging.basicConfig(level='INFO')
 # 期望输出：INFO:khl.receiver:[ init ] launched
@@ -30,4 +30,5 @@ logging.basicConfig(level='INFO')
 # 凭证传好了、机器人新建好了、指令也注册完了
 # 接下来就是运行我们的机器人了，bot.run() 就是机器人的起跑线
 bot.run()
+
 # 教程来自：https://github.com/TWT233/khl.py/tree/main/example/ex01_helloworld
