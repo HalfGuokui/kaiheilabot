@@ -1,7 +1,7 @@
 from khl import Bot, Message
 
 # 新建机器人，token 就是机器人的身份凭证
-bot = Bot(token='Fill out the bot token')
+bot = Bot(token='你的机器人token')
 
 
 # 注册指令
@@ -19,10 +19,7 @@ async def world(msg: Message):
 
 @bot.command(name='小可爱')
 async def world(msg: Message):  # when `name` is not set, the function name will be used
-    # msg 指的是我们所发送的那句 `/小可爱`
-    # 所以 msg.reply() 就是回复我们那句话，回复的内容是 '咋啦，我在呢!😘'
-    await msg.reply('咋啦，我在呢!😘')
-
+    await msg.reply('咋啦，我在呢!😘')  # 当然也可以输入/小可爱，机器人回复：咋啦，我在呢!😘
 
 
 # 运行日志
